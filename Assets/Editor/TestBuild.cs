@@ -13,7 +13,7 @@ public class TestBuild
         if (!Directory.Exists(outdir)) Directory.CreateDirectory(outdir);
         if (File.Exists(outputPath)) File.Delete(outputPath);
 
-        string[] scenes = new string[] { "Assets/Scemes/SampleScene.unity" };
+        string[] scenes = new string[] { "Assets/Scenes/SampleScene.unity" };
         BuildPipeline.BuildPlayer(scenes, outputPath, BuildTarget.StandaloneWindows, BuildOptions.None);
 
         if(File.Exists(outputPath))
