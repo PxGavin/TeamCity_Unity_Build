@@ -218,6 +218,18 @@
         "com.unity.ugui": "1.0.0"
       }
     },
+    "com.unity.render-pipelines.high-definition": {
+      "version": "8.2.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.render-pipelines.core": "8.2.0",
+        "com.unity.shadergraph": "8.2.0",
+        "com.unity.visualeffectgraph": "8.2.0",
+        "com.unity.render-pipelines.high-definition-config": "8.2.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.render-pipelines.high-definition-config": {
       "version": "8.2.0",
       "depth": 0,
@@ -260,6 +272,16 @@
         "com.unity.jobs": "0.2.9-preview.15",
         "com.unity.properties": "1.4.3-preview",
         "com.unity.test-framework.performance": "2.0.8-preview"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.shadergraph": {
+      "version": "8.2.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.render-pipelines.core": "8.2.0",
+        "com.unity.searcher": "4.0.9"
       },
       "url": "https://packages.unity.com"
     },
@@ -313,6 +335,15 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.unity.visualeffectgraph": {
+      "version": "8.2.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.shadergraph": "8.2.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "io.backtrace.unity": {
       "version": "file:../LocalPackages/backtrace-unity-3.2.6",
