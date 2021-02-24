@@ -211,12 +211,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
-      "version": "file:../LocalPackages/com.unity.render-pipelines.core@9.0.0-preview.60",
-      "depth": 0,
-      "source": "local",
+      "version": "8.2.0",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
-      }
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.high-definition": {
       "version": "8.2.0",
@@ -231,13 +232,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.high-definition-config": {
-      "version": "8.2.0",
+      "version": "file:../LocalPackages/com.unity.render-pipelines.high-definition-config",
       "depth": 0,
-      "source": "registry",
+      "source": "local",
       "dependencies": {
-        "com.unity.render-pipelines.core": "8.2.0"
-      },
-      "url": "https://packages.unity.com"
+        "com.unity.render-pipelines.core": "7.3.1"
+      }
     },
     "com.unity.rendering.hybrid": {
       "version": "0.8.0-preview.19",
