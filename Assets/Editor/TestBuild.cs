@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TestBuild
 {
-    public static string buildPath = Application.dataPath + "/../../bin/";
+    public static string buildPath = Application.dataPath + "/../build/";
 
     public static void BuildApk()
     {
