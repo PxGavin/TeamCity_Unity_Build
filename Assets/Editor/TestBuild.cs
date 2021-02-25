@@ -5,20 +5,22 @@ using UnityEngine;
 
 public class TestBuild
 {
+    public static string buildPath = Application.dataPath + "/../../bin/";
+
     public static void BuildApk()
     {
-        var outdir = "C:/bin/win/TeamCity_CI_Build/";
-        var outputPath = Path.Combine(outdir, "TeamCity.exe");
+        var outdir = $"{buildPath}win/TeamCity_CI_Build";
+        var targetPath = $"{buildPath}win/TeamCity_CI_Build/TeamCity.exe";
 
         if (!Directory.Exists(outdir)) Directory.CreateDirectory(outdir);
-        if (File.Exists(outputPath)) File.Delete(outputPath);
+        if (File.Exists(targetPath)) File.Delete(targetPath);
 
         string[] scenes = new string[] { "Assets/Scenes/SampleScene.unity" };
-        BuildPipeline.BuildPlayer(scenes, outputPath, BuildTarget.StandaloneWindows, BuildOptions.None);
+        BuildPipeline.BuildPlayer(scenes, targetPath, BuildTarget.StandaloneWindows, BuildOptions.None);
 
-        if(File.Exists(outputPath))
+        if(File.Exists(targetPath))
         {
-            Debug.Log("Build Success :" + outputPath);
+            Debug.Log("Build Success :" + targetPath);
         }
         else
         {
